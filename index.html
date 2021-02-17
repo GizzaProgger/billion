@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 000 000</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/sharedFiles/css/main.css">
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="raffle">
+    <!-- <canvas class="raffle__bg" width="500" height="500"></canvas> -->
+    <div class="raffle__bg raffle-bg">
+      <div class="raffle-bg__left raffle-bg__part ">
+        <svg width="100%" class="raffle__wave" height="100%" version="1.1" xmlns="https://www.w3.org/2000/svg"><defs></defs><path d=""/></svg>
+        <svg width="100%" class="raffle__wave" height="100%" version="1.1" xmlns="https://www.w3.org/2000/svg"><defs></defs><path d=""/></svg>
+        <svg width="100%" class="raffle__wave raffle__wave--line" height="100%" version="1.1" xmlns="https://www.w3.org/2000/svg"><defs></defs><path stroke="#db0242" d="" /></svg>
+      </div>
+      <div class="raffle-bg__right raffle-bg__part ">
+        <svg width="100%" class="raffle__wave" height="100%" version="1.1" xmlns="https://www.w3.org/2000/svg"><defs></defs><path d=""/></svg>
+        <svg width="100%" class="raffle__wave" height="100%" version="1.1" xmlns="https://www.w3.org/2000/svg"><defs></defs><path d=""/></svg>
+        <svg width="100%" class="raffle__wave raffle__wave--line" height="100%" version="1.1" xmlns="https://www.w3.org/2000/svg"><defs></defs><path stroke="#db0242" d="" /></svg>
+      </div>
+      <!-- <div class="raffle-bg__mobile raffle-bg__part d-block d-sm-none">
+        <svg width="100%" class="raffle__wave raffle__wave--mobile" height="100%" version="1.1" xmlns="https://www.w3.org/2000/svg"><defs></defs><path d=""/></svg>
+        <svg width="100%" class="raffle__wave raffle__wave--line" height="100%" version="1.1" xmlns="https://www.w3.org/2000/svg"><defs></defs><path stroke="#db0242" d="" /></svg>
+        <svg width="100%" class="raffle__wave raffle__wave--line" height="100%" version="1.1" xmlns="https://www.w3.org/2000/svg"><defs></defs><path stroke="#db0242" d="" /></svg>
+      </div> -->
+      <!-- <svg width="100%" class="raffle__wave raffle-wave--first" height="100%" version="1.1" xmlns="https://www.w3.org/2000/svg"><defs></defs><path d=""/></svg>
+      <svg width="100%" class="raffle__wave raffle-wave--second" height="100%" version="1.1" xmlns="https://www.w3.org/2000/svg"><defs></defs><path d=""/></svg> -->
+    </div>
+    <div class="container">
+      <div class="raffle__title">
+        <div class="raffle-title__text">РАЗЫГРЫВАЕМ ОДИН МИЛЛИОН</div>
+        <div class="row">
+          <div class="col-12 col-lg-1 d-none d-lg-block"></div>
+          <div class="col-12 col-lg-8">
+            <div class="raffle-title__timer raffle-title__timer--positive">
+            </div>
+          </div>
+          <div class="col-12 col-lg-1 d-none d-lg-flex align-items-center">
+            <button class="raffle-title__start-btn raffle-start-btn" style="transform: scale(1.3);">
+              <div class="threeangle raffle-start-btn__threeangle"></div>
+            </button>
+          </div>
+        </div>
+        <div class="d-block d-lg-flex align-items-center justify-content-center">
+          <div class="raffle-title__text">ДРАГОЦЕННЫХ СЕКУНД</div>
+          <div class="raffle-title__negative-timer-wrap">
+            <div class="raffle-title__timer raffle-title__timer--negative">00:00:00:00</div>
+            <button class="raffle-title__start-btn raffle-start-btn d-flex d-sm-none"><div class="threeangle raffle-start-btn__threeangle"></div></button>
+          </div>
+        </div>
+      </div>
+      <div class="raffle__course-list raffle-course-list row">
+        <div class="raffle-course-list__item course-item">
+          <img src="/sharedFiles/imgs/raffle/pink.png" alt="курс 1" class="course-item__img" style="width: 126%;max-width: initial;margin-left: -13%;">
+        </div>
+        <div class="raffle-course-list__item course-item">
+          <img src="/sharedFiles/imgs/raffle/beige.png" alt="курс 2" class="course-item__img">
+        </div>
+        <div class="raffle-course-list__item course-item">
+          <img src="/sharedFiles/imgs/raffle/pinkGirl.png" alt="курс 3" class="course-item__img">
+        </div>
+        <div class="raffle-course-list__item course-item">
+          <img src="/sharedFiles/imgs/raffle/white.png" alt="курс 4" class="course-item__img">
+        </div>
+        <div class="raffle-course-list__item course-item">
+          <img src="/sharedFiles/imgs/raffle/red.png" alt="курс 5" class="course-item__img">
+        </div>
+        <div class="raffle-course-list__item raffle-course-list__item--wrap-btn course-item d-none d-md-flex d-lg-none">
+          <button class="ourse-item__start-btn raffle-start-btn raffle-start-btn--big"><div class="threeangle raffle-start-btn__threeangle"></div></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container raffle-provision">
+      <div class="raffle__provision">
+        до <span style="color: #0bf100">28.02.2021</span> купи курс английского <br class="d-block d-lg-none">
+        и выиграй один новый курс английского
+      </div>
+      <button class="raffle-btn raffle-provision__btn">Хочу выиграть курс</button>
+    </div>
+    <video src="/sharedFiles/videos/billion.mp4" style="position: absolute; opacity: 0; z-index: -10; width: 0; height: 0; display: block" class="raffle-video raffle__video"></video>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="/sharedFiles/js/wavify.js"></script>
+<script src="/sharedFiles/js/scripts.js"></script>
+</html>
